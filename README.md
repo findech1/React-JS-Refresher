@@ -4,4 +4,4 @@ This is a course to learn more on react js
 - Rendering UI
 - Updating UI with Javascript
 - Getting Started with React
--
+- Building UI with Components
