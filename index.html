@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React Js App</title>
+    <script src="component.jsx" type="text/javascript"></script>
 </head>
 <body>
     <div id="app"></div>
@@ -28,19 +29,7 @@
     // Place the H1 element inside the div
     //app.appendChild(header);
 
-    const app = document.getElementById('app');
-    function Header(){
-        return <h1>Develop. Preview. Ship.</h1>;
-    }
-    function HomePage() {
-        return (
-          <div>
-            <Header />
-          </div>
-        );}
-    const root = ReactDOM.createRoot(app);
-    root.render(<Header />);
-    root.render(<HomePage />);
+    
  </script>
 </body>
 </html>

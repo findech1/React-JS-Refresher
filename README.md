@@ -5,3 +5,4 @@ This is a course to learn more on react js
 - Updating UI with Javascript
 - Getting Started with React
 - Building UI with Components
+- Displaying Data with Props
