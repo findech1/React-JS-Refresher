@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React Js App</title>
-    <script src="component.jsx" type="text/javascript"></script>
 </head>
 <body>
     <div id="app"></div>
@@ -12,25 +11,35 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel Script -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/jsx">
-    // Select the div element with 'app' id
-    //const app = document.getElementById('app');
+    <script type="text/babel">
+      // Header Component
+      function Header({ title }) {
+          return <h1>{title}</h1>;
+      }
+
+      // HomePage Component
+      function HomePage() {
+  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
  
-    // Create a new H1 element
-    //const header = document.createElement('h1');
+  return (
+    <div>
+      <Header title="Develop. Preview. Ship." />
+      <ul>
+        {names.map((name) => (
+          <li key={name}>{name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+      
 
-    // Create a new text node for the H1 element
-    //const text = 'Develop. Preview. Ship.';
-    //const headerContent = document.createTextNode(text);
+      // Get the root element
+      const app = document.getElementById('app');
 
-    // Append the text to the H1 element
-    //header.appendChild(headerContent);
-
-    // Place the H1 element inside the div
-    //app.appendChild(header);
-
-    
- </script>
+      // Render the HomePage Component
+      const root = ReactDOM.createRoot(app);
+      root.render(<HomePage />);
+    </script>
 </body>
 </html>
-
