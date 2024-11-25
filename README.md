@@ -6,4 +6,4 @@ This is a course to learn more on react js
 - Getting Started with React
 - Building UI with Components
 - Displaying Data with Props
-- 
+- Server and client
